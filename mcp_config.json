@@ -1,0 +1,35 @@
+{
+  "mcpServers": {
+    "github": {
+      "serverUrl": "https://api.githubcopilot.com/mcp/",
+      "headers": {
+        "Authorization": "Bearer YOUR-GITHUB-PAT-GOES-HERE"
+      },
+      "disabledTools": [],
+      "disabled": false
+    },
+    "microsoft-docs": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "mcp-remote",
+        "https://learn.microsoft.com/api/mcp"
+      ],
+      "disabled": false
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp@latest"
+      ],
+      "disabled": false
+    },
+    "scryfall": {
+      "command": "npx",
+      "args": [
+        "scryfall-mcp-server"
+      ],
+      "disabled": false
+    }
+  }
+}
